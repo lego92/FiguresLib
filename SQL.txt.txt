@@ -1,0 +1,6 @@
+SELECT Products.name, Categories.name 
+FROM Products
+LEFT JOIN ProductsCategories
+ON ProductsCategories.productId = Products.id
+LEFT JOIN Categories
+ON ProductsCategories.caregoryId = Categories.id
